@@ -2,7 +2,7 @@ package solid;
 
 public class OpenCloseBadDiscountCalculator {
 
-    public double getDiscount(InvoiceOCP invoice, Customer customer) {
+    public double getDiscount(Invoice invoice, Customer customer) {
         if (customer.isVip()) {
             return invoice.getAmount() * 0.2;
         } else {
